@@ -74,6 +74,7 @@ html {
   font-size: 16px;
   scroll-behavior: initial;
   /* Controlado pelo Lenis */
+  overflow-x: hidden;
 }
 
 /* ==========================================
@@ -319,7 +320,8 @@ a {
    6. LINKS PRINCIPAIS (LINKS RÁPIDOS)
    ========================================== */
 .quick-links {
-  padding: 40px 0 80px 0;
+  padding-top: 40px;
+  padding-bottom: 80px;
   position: relative;
 }
 
@@ -433,7 +435,8 @@ a {
    7. SOBRE (Texto adaptado do print)
    ========================================== */
 .about {
-  padding: 140px 0 80px 0;
+  padding-top: 140px;
+  padding-bottom: 80px;
   position: relative;
 }
 
@@ -479,6 +482,10 @@ a {
   line-height: 1.7;
   text-align: justify;
   margin-bottom: 20px;
+}
+
+.about-text-mobile {
+  display: none;
 }
 
 .about-text:last-child {
@@ -559,17 +566,18 @@ a {
    ========================================== */
 @media (max-width: 900px) {
   .about {
-    padding: 100px 0 60px 0;
+    padding-top: 80px;
+    padding-bottom: 50px;
   }
 
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
   }
 
   .about-content {
     order: 1;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .about-image-container {
@@ -577,16 +585,24 @@ a {
   }
 
   .about-image-wrapper {
-    max-width: 320px;
+    max-width: 300px;
   }
 
   .about-title {
     font-size: 2.2rem;
-    text-align: center;
+    text-align: left;
   }
 
   .about-text {
-    text-align: center;
+    text-align: justify;
+  }
+
+  .about-text-desktop {
+    display: none;
+  }
+
+  .about-text-mobile {
+    display: block;
   }
 
   .whatsapp-float {
@@ -602,7 +618,67 @@ a {
   }
 }
 
+@media (max-width: 600px) {
+  .about {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .about-title {
+    font-size: 1.85rem;
+  }
+
+  .quick-link-card {
+    padding: 16px 20px;
+  }
+
+  .quick-link-left {
+    gap: 16px;
+  }
+
+  .quick-link-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .quick-link-icon-wrapper svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .quick-link-info h3 {
+    font-size: 1.05rem;
+  }
+
+  .quick-link-info p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}
+
 @media (max-width: 480px) {
+  .quick-links {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .quick-link-card {
+    padding: 14px 16px;
+  }
+
+  .quick-link-left {
+    gap: 12px;
+  }
+
+  .quick-link-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .quick-link-info p {
+    font-size: 0.75rem;
+  }
+
   .btn {
     width: 100%;
   }
