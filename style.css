@@ -19,15 +19,15 @@
   --color-text-muted: #c2c2c2;
   /* Texto secundário cinza médio */
 
-  --color-accent: #C4B49F;
-  /* Bege escuro refinado e clássico */
-  --color-accent-hover: #A89885;
-  /* Versão ligeiramente mais escura do bege para hover */
-  --color-accent-soft: rgba(196, 180, 159, 0.08);
-  /* Bege com ~8% de opacidade */
+  --color-accent: #FF5A1F;
+  /* Laranja premium vibrante */
+  --color-accent-hover: #E04E17;
+  /* Versão ligeiramente mais escura do laranja para hover */
+  --color-accent-soft: rgba(255, 90, 31, 0.08);
+  /* Laranja com ~8% de opacidade */
 
-  --color-border: rgba(196, 180, 159, 0.15);
-  /* Bordas bege sutis com transparência */
+  --color-border: rgba(255, 90, 31, 0.15);
+  /* Bordas laranja sutis com transparência */
 
   /* Tipografia */
   --font-title: "Cormorant Garamond", serif;
@@ -418,7 +418,7 @@ a {
 .quick-link-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
-  border-color: rgba(196, 180, 159, 0.3);
+  border-color: rgba(255, 90, 31, 0.3);
 }
 
 .quick-link-card:hover .quick-link-icon-wrapper {
